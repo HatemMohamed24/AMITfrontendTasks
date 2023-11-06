@@ -1,0 +1,155 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+body {
+    font-family: sans-serif;
+}
+.nav-bar{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    padding: 0px 1em;
+    justify-content: left;
+    align-items: center;
+    height: 60px;
+    box-shadow: 0 2px 4px rgba(0, 0,0,.08),0 4px 12px rgba(0, 0,0,.08); 
+}
+.nav-item {
+    text-align: center;
+    margin: 0px 0.4em;
+    white-space: nowrap;
+}
+.udemy-logo {
+    width: 6.5rem;
+}
+.main-item {
+    flex-grow: 1 ;
+    /* max-width: 800px; */
+
+}
+.anchor {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+.anchor:hover {
+    color : blue ; 
+}
+.form {
+background-color: #f7f9fa;
+border: 1px solid black;
+display: flex;
+justify-content: left;
+align-items: center;
+border-radius: 100px;
+padding: 5px;
+width: 100%;
+overflow: hidden;
+}
+.form-input { 
+    border: none;
+    width: 90%;
+    padding: 7px 8px;
+
+
+}
+.form-input:focus {
+    outline: none;
+}
+.form-btn {
+    background-color: transparent;
+    border: none;
+    margin-left: 10px;
+    width: 8%;
+    opacity: 0.8;
+    cursor: pointer;
+
+}
+.btn {
+    background-color: white;
+    padding: 10px 10px ;
+    border: 2.5px solid black ; 
+    font-weight: 700;
+}
+.btn:hover {
+    background-color: #f7f9fa;
+    cursor: pointer;
+}
+.sign-up-btn {
+    background-color: black;
+    color: white;
+    font-weight: 700;
+}
+.sign-up-btn:hover {
+    background-color: black;
+}
+.language-icon {
+    padding: 9px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cart-icon svg{
+    width: 25px;
+    height: 25px;
+}
+.menu-icon {
+    color :black ; 
+}
+.menu-icon svg {
+    color: black;
+    width: 25px;
+    height: 25px;
+}   
+.menu {
+    display: none;
+}
+.auxalary-search{
+    display: none;
+}
+@media screen and (max-width:1080px) {
+    .udemy-business {
+        display: none;
+    }
+    
+}
+@media screen and (max-width:900px) {
+    .Teach-on-udemy {
+        display: none;
+    }
+    
+}
+@media screen and (max-width:750px) {
+    .menu {
+        display: inline-block;
+    }
+    .categories {
+        display: none;
+    }
+    .main-item{
+        display: none;
+    }
+    .btn {
+        display: none;
+    }
+    .udemy {
+        flex-grow: 2;
+    }
+    .auxalary-search {
+        display: inline-block;
+    }
+    .auxalary-search svg {
+        width: 25px;
+        height: 25px;
+        margin-right: 5px;
+    }
+    .nav-bar {
+        margin-right: 0px;
+        padding-right: 0px;
+    }
+}
+
+
